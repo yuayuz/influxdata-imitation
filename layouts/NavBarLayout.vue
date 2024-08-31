@@ -1,6 +1,6 @@
 <template>
   <nav-bar v-model="hidden" />
-  <div class="tw-mx-auto tw-max-w-screen-2xl" :hidden="hidden">
+  <div :hidden="hidden">
     <slot />
   </div>
 </template>

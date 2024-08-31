@@ -1,0 +1,38 @@
+.gr-underline:after
+  content ''
+  position absolute
+  left 0
+  bottom 0
+  width 100%
+  height 2px
+  background linear-gradient(90deg, #D30971 0%, #9B2AFF 100%)
+  transition width 0.5s ease
+
+.gr-underline:hover:after {
+  background linear-gradient(90deg, #9B2AFF 0%, #D30971 100%)
+}
+
+
+.scroll-container {
+  animation scroll-left 20s linear infinite /* 无限滚动动画，20秒一轮 */
+  transform translate3d(0, 0, 0) /* 触发硬件加速 */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform translateX(0) /* 初始位置 */
+  }
+  100% {
+    transform translateX(-157%) /*
+    动画完成时只让一个循环第一组图片循环完成,
+    刚好第二组的第一个图片到达初始位置,
+    重新滚动
+    使用错觉完成无限滚动
+    */
+  }
+}
+
+.scroll-image {
+  filter brightness(0) invert(100%)
+  opacity 40%
+}
