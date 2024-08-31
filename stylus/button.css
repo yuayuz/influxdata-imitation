@@ -4,21 +4,9 @@
   padding-right: 8px;
 }
 .buttonColor {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#d30971),
-    to(#9b2aff)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#d30971), to(#9b2aff));
   color: #fff;
 }
 .buttonColor:hover {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#9b2aff),
-    to(#d30971)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#9b2aff), to(#d30971));
 }

@@ -3,6 +3,5 @@
   border-radius: 4px;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  background-image: linear-gradient(to right, #020a47, #020a47),
-    linear-gradient(45deg, #d30971, #9b2aff);
+  background-image: linear-gradient(to right, #020a47, #020a47), linear-gradient(45deg, #d30971, #9b2aff);
 }

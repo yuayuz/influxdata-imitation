@@ -15,3 +15,8 @@ export interface styleSignInMenu {
   title: string
   lists: string[]
 }
+
+export interface useCasesFooterItem {
+  svg: string
+  title: string
+}
