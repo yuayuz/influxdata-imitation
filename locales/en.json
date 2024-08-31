@@ -1,1 +1,127 @@
-{}
+{
+  "products": {
+    "title": "Products",
+    "subheader": "",
+    "managedByUs": {
+      "title": "Managed By Us",
+      "subtitle": "Simplify and scale with cloud services",
+      "items": ["InfluxDB Cloud Serverless", "InfluxDB Cloud Dedicated"]
+    },
+    "managedByYou": {
+      "title": "Managed By You",
+      "subtitle": "For organizations that need full control",
+      "items": ["InfluxDB Clustered"]
+    },
+    "Integrations&Collectors": {
+      "title": "Managed By You",
+      "subtitle": "300+ plugins, easy interoperability",
+      "items": ["Collectors", "Client Libraries", "Lakehouse / Warehouse"]
+    },
+    "OtherResources": {
+      "title": "Managed By You",
+      "subtitle": "",
+      "items": [
+        "Performance Comparisons",
+        "Find the Right Product",
+        "Platform Overview"
+      ]
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "subheader": "Data Workloads",
+    "Real-TimeAnalytics": {
+      "title": "Real-Time Analytics",
+      "subheader": "Collect, analyze, and predict in real time",
+      "items": [
+        "Infrastructure Monitoring",
+        "Real-Time Monitoring",
+        "DevOps Monitoring",
+        "Security Event Monitoring",
+        "Application Monitoring",
+        "Gaming Analytics"
+      ]
+    },
+    "Network&DeviceTelemetry": {
+      "title": "Network & Device Telemetry",
+      "subheader": "Modernize telemetry data collection and analysis",
+      "items": ["Network Monitoring", "Aerospace Monitoring", "IoT Analytics"]
+    },
+    "ModernDataHistorian": {
+      "title": "Modern Data Historian",
+      "subheader": "Modernize operations with time series data",
+      "items": [
+        "Renewable Energy Monitoring",
+        "Process Modernization",
+        "Digital Transformation",
+        "Predictive Maintenance"
+      ]
+    },
+    "MachineLearning&AI": {
+      "title": "Machine Learning & AI",
+      "subheader": "Turn sensor data into actionable intelligence",
+      "items": ["Predictive Analytics", "ML with Lakehouses"]
+    },
+    "Industries": {
+      "title": "Industries",
+      "subtitle": "",
+      "items": [
+        "Aerospace",
+        "Energy & Utilities",
+        "Financial Services",
+        "Industrial IoT",
+        "Consumer IoT",
+        "Manufacturing",
+        "Gaming",
+        "Telecommunications"
+      ]
+    }
+  },
+  "developers": {
+    "title": "Developers",
+    "Learn": {
+      "title": "Learn",
+      "subtitle": "",
+      "items": [
+        "Developer Resources",
+        "Blog",
+        "Customers",
+        "Support",
+        "Webinars"
+      ]
+    },
+    "Build": {
+      "title": "Build",
+      "subtitle": "",
+      "items": [
+        "Documentation",
+        "InfluxDB OSS",
+        "Telegraf Data Collection",
+        "AWS",
+        "Integrations"
+      ]
+    },
+    "Connect": {
+      "title": "Connect",
+      "subtitle": "",
+      "items": ["InfluxDB University", "Community", "Events and Live Training"]
+    },
+    "FeaturedResources": {
+      "title": "Featured Resources",
+      "subtitle": "",
+      "items": [
+        "Streamline Migration to InfluxDB 3.0",
+        "Getting Started with MING Stack for IoT",
+        "Developer Overview"
+      ]
+    }
+  },
+  "signIn": {
+    "title": "Sign In",
+    "items": [
+      "Log in to InfluxDB Cloud 2.0",
+      "Log in to InfluxDB Enterprise",
+      "Log in to InfluxDB Cloud 1.x"
+    ]
+  }
+}
