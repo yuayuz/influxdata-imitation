@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-bg-[#020a47] tw-px-12 tw-pb-1 tw-pt-6">
+  <div class="tw-hidden tw-bg-[#020a47] tw-px-12 tw-pb-1 tw-pt-6 lg:tw-block">
     <div class="tw-mx-auto tw-max-w-screen-2xl tw-py-14">
       <div class="tw-mx-20 tw-max-w-screen-2xl">
         <div class="tw-text-7xl tw-font-black tw-text-white">
@@ -45,6 +45,46 @@
           Time series data for every workload
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="tw-bg-[#020a47] tw-px-12 tw-pb-1 tw-pt-24 lg:tw-hidden">
+    <div class="tw-py-10">
+      <div class="tw-text-7xl tw-font-black tw-text-white">Every</div>
+      <div class="tw-text-7xl tw-font-black tw-text-[#5EE4E4]">
+        {{ currentTime() }}
+      </div>
+      <div class="tw-text-7xl tw-font-black tw-text-white">counts.</div>
+      <div class="tw-mb-3.5 tw-pb-6 tw-text-2xl tw-font-normal tw-text-white">
+        Analyze a billion series at a fraction of the cost. InfluxDB is the
+        platform for time series data.
+      </div>
+      <div class="tw-flex tw-items-center">
+        <div class="tw-relative tw-text-lg tw-text-white">
+          <div class="gr-underline">Get started with InfluxDB</div>
+        </div>
+        <v-icon class="tw-ml-2 tw-text-[#AD1FD1]" icon="mdi-arrow-right" />
+      </div>
+    </div>
+    <div class="tw-relative tw-overflow-hidden tw-py-14">
+      <div class="scroll-container tw-flex tw-h-32">
+        <div
+          v-for="n in brands.length"
+          :key="n"
+          class="tw-h-28 tw-w-full tw-px-8"
+        >
+          <!-- filter: brightness(0) invert(100%) 亮度为0 反转颜色 -->
+          <v-img
+            :src="brands[n - 1]"
+            height="108"
+            width="108"
+            class="scroll-image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="tw-pb-7 tw-text-2xl tw-font-black tw-text-white">
+      Time series data for every workload
     </div>
   </div>
 </template>
