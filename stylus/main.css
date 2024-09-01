@@ -19,6 +19,9 @@
   filter: brightness(0) invert(100%);
   opacity: 40%;
 }
+.image-container {
+  animation: 0.5s image-loading linear 1;
+}
 @-moz-keyframes scroll-left {
   0% {
     transform: translateX(0) /* 初始位置 */;
@@ -69,5 +72,37 @@
     重新滚动
     使用错觉完成无限滚动
     */;
+  }
+}
+@-moz-keyframes image-loading {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes image-loading {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes image-loading {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes image-loading {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

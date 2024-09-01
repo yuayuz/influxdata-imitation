@@ -1,5 +1,6 @@
 <template>
   <home-component />
+  <time-series-data />
 </template>
 
 <script setup lang="ts">
