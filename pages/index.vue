@@ -2,6 +2,7 @@
   <home-component />
   <time-series-data />
   <proven-performance />
+  <open-source />
 </template>
 
 <script setup lang="ts">
