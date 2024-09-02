@@ -22,6 +22,12 @@
 .image-container {
   animation: 0.5s image-loading linear 1;
 }
+.rise {
+  display: flex;
+}
+.rise-container {
+  animation: rise-loading 2s linear;
+}
 @-moz-keyframes scroll-left {
   0% {
     transform: translateX(0) /* 初始位置 */;
@@ -103,6 +109,46 @@
     transform: translateY(50%);
   }
   100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes rise-loading {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes rise-loading {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes rise-loading {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes rise-loading {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 100%;
     transform: translateY(0);
   }
 }
