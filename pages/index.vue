@@ -4,6 +4,7 @@
   <proven-performance />
   <open-source />
   <time-series-analytics />
+  <developers-choose />
 </template>
 
 <script setup lang="ts">
