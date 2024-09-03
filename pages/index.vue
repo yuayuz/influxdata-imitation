@@ -3,6 +3,7 @@
   <time-series-data />
   <proven-performance />
   <open-source />
+  <time-series-analytics />
 </template>
 
 <script setup lang="ts">

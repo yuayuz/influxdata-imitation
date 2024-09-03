@@ -66,4 +66,43 @@
     opacity 100%
     transform translateY(0)
 
+.group-l:before
+  content ''
+  position absolute
+  left 0
+  width 5px
+  height 100%
+  background-color rgba(94, 228, 228, 0.2)
+  border-radius 4px
 
+.button-l-active:before
+  content ''
+  position absolute
+  left 0
+  width 5px
+  height 60px
+  background-color #5EE4E4
+  border-radius 4px
+
+.divider:before
+  content ''
+  position absolute
+  top 0
+  left 0
+  right 0
+  width 100%
+  height 5px
+  background-color rgba(94, 228, 228, 0.2)
+  border-radius 10px
+
+.rise-container-slightly
+ animation rise-loading-slightly 2s linear
+
+
+@keyframes rise-loading-slightly
+  0%
+    opacity 0
+    transform translateY(30%)
+  100%
+    opacity 100%
+    transform translateY(0)
