@@ -106,3 +106,25 @@
   100%
     opacity 100%
     transform translateY(0)
+
+.imageButton
+  filter brightness(0) invert(100%)
+
+.read:before
+  content ''
+  position absolute
+  width 100%
+  height 100%
+  background-color white
+  border-top-left-radius 5px
+  border-bottom-left-radius 5px
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.code-scroll-container::-webkit-scrollbar
+  display none
+
+
+/* Hide scrollbar for Firefox */
+.code-scroll-container
+  -ms-overflow-style none /* IE and Edge */
+  scrollbar-width none /* Firefox */

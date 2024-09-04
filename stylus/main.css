@@ -60,6 +60,27 @@
 .rise-container-slightly {
   animation: rise-loading-slightly 2s linear;
 }
+.imageButton {
+  filter: brightness(0) invert(100%);
+}
+.read:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+.code-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for Firefox */
+.code-scroll-container {
+  -ms-overflow-style: none /* IE and Edge */;
+  scrollbar-width: none /* Firefox */;
+}
 @-moz-keyframes scroll-left {
   0% {
     transform: translateX(0) /* 初始位置 */;

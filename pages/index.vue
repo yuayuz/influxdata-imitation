@@ -5,6 +5,7 @@
   <open-source />
   <time-series-analytics />
   <developers-choose />
+  <favorite-language />
 </template>
 
 <script setup lang="ts">
