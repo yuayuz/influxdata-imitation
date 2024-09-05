@@ -81,6 +81,40 @@
   -ms-overflow-style: none /* IE and Edge */;
   scrollbar-width: none /* Firefox */;
 }
+.startBuildingBackground {
+  background: linear-gradient(#fff 0% 60%, #020a47 60% 100%);
+}
+.startBuildingCardBackground {
+  background: linear-gradient(90deg, #d30971 0%, #9b2aff 100%);
+}
+.white-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+.white-underline:hover:after {
+  background: #020a47;
+}
+.buttonHover {
+  color: #fff;
+}
+.buttonHover:hover {
+  color: #020a47;
+}
+.startBuildingButton {
+  background: #020a47;
+  border: #020a47 2px solid;
+  border-radius: 10px;
+  color: #fff;
+}
+.startBuildingButton:hover {
+  background: none;
+  color: #020a47;
+}
 @-moz-keyframes scroll-left {
   0% {
     transform: translateX(0) /* 初始位置 */;

@@ -8,6 +8,7 @@
   <favorite-language />
   <love-and-trust />
   <leader-component />
+  <start-building />
 </template>
 
 <script setup lang="ts">
