@@ -6,6 +6,7 @@
   <time-series-analytics />
   <developers-choose />
   <favorite-language />
+  <love-and-trust />
 </template>
 
 <script setup lang="ts">
