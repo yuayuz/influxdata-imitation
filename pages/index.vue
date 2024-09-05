@@ -9,6 +9,7 @@
   <love-and-trust />
   <leader-component />
   <start-building />
+  <footer-component />
 </template>
 
 <script setup lang="ts">
