@@ -7,6 +7,7 @@
   <developers-choose />
   <favorite-language />
   <love-and-trust />
+  <leader-component />
 </template>
 
 <script setup lang="ts">
