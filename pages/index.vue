@@ -10,6 +10,7 @@
   <leader-component />
   <start-building />
   <footer-component />
+  <cookies-settings />
 </template>
 
 <script setup lang="ts">
