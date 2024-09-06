@@ -9,7 +9,7 @@
     <div
       :class="[
         'tw-h-[14rem] tw-rounded-t-lg tw-px-6 tw-py-8',
-        isActive ? 'tw-bg-white' : `tw-bg-[${props.message.color}]`,
+        isActive ? 'tw-bg-white' : color,
       ]"
     >
       <div
@@ -33,7 +33,7 @@
     <div
       :class="[
         'tw-flex tw-h-[25rem] tw-w-full tw-items-center tw-justify-center tw-overflow-hidden tw-rounded-b-lg',
-        `tw-bg-[${props.message.color}]`,
+        color,
       ]"
     >
       <div class="image-container tw-w-3/4" :hidden="!isActive">
@@ -47,10 +47,25 @@
 import { onMounted, ref, watch } from "#imports"
 import type { card } from "~/styles/timeSeriesData"
 
+const color = ref()
 let activate = defineModel<string>()
 const isActive = ref(false)
 onMounted(() => {
   isActive.value = activate.value === props.message.id
+  switch (props.message.color) {
+    case "#9B2AFF":
+      color.value = "tw-bg-[#9B2AFF]"
+      break
+    case "#D30971":
+      color.value = "tw-bg-[#D30971]"
+      break
+    case "#5EE4E4":
+      color.value = "tw-bg-[#5EE4E4]"
+      break
+    case "#D6F622":
+      color.value = "tw-bg-[#D6F622]"
+      break
+  }
 })
 watch(activate, () => {
   isActive.value = activate.value === props.message.id
