@@ -11,6 +11,7 @@
   <start-building />
   <footer-component />
   <cookies-settings />
+  <message-button />
 </template>
 
 <script setup lang="ts">

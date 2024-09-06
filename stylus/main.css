@@ -115,6 +115,9 @@
   background: none;
   color: #020a47;
 }
+.messageCard {
+  background: linear-gradient(#020a47 0% 9%, #fff 9% 100%);
+}
 @-moz-keyframes scroll-left {
   0% {
     transform: translateX(0) /* 初始位置 */;
