@@ -17,7 +17,7 @@
   </div>
 
   <div
-    class="tw-sticky tw-top-0 tw-hidden tw-w-full tw-border tw-bg-[#020a47] tw-shadow lg:tw-block dark:tw-bg-[#020a47]"
+    class="tw-sticky tw-top-0 tw-hidden tw-w-full tw-bg-[#020a47] lg:tw-block dark:tw-bg-[#020a47]"
     style="z-index: 1"
   >
     <div
