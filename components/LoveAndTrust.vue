@@ -1,82 +1,36 @@
 <template>
-  <div class="tw-rounded-br-[5rem] tw-bg-[#020A47] tw-px-4 tw-pb-20 tw-pt-12">
+  <div
+    class="tw-rounded-br-[5rem] tw-bg-[#020A47] tw-px-4 tw-pb-20 tw-pt-12 lg:tw-hidden"
+  >
+    <div class="tw-pb-5 tw-pt-3 tw-text-3xl tw-font-bold tw-text-white">
+      {{ title }}
+    </div>
+    <lazy-love-and-trust-card-tabs
+      :items="items"
+      :card-windows="cardWindows"
+      :common-windows="commonWindows"
+    />
+  </div>
+
+  <div
+    class="tw-hidden tw-rounded-br-[5rem] tw-bg-[#020A47] tw-px-4 tw-pb-20 tw-pt-12 lg:tw-block"
+  >
     <div class="tw-mx-auto tw-max-w-screen-xl tw-pt-12">
       <div
-        class="tw-mx-auto tw-w-3/5 tw-pb-20 tw-pt-12 tw-text-center tw-text-5xl tw-font-bold tw-text-white"
+        class="tw-mx-auto tw-w-4/5 tw-pb-20 tw-pt-12 tw-text-center tw-text-5xl tw-font-bold tw-text-white"
       >
-        Loved by developers, trusted by enterprises
+        {{ title }}
       </div>
-      <v-card rounded="lg">
-        <v-tabs v-model="activeItem" grow height="117" class="tw-shadow">
-          <v-tab
-            v-for="n in items.length"
-            :key="n"
-            :value="items[n - 1].name"
-            slider-color="#C41297"
-            class="tw-relative"
-          >
-            <v-img :src="items[n - 1].img" absolute />
-          </v-tab>
-        </v-tabs>
-        <v-tabs-window v-model="activeItem">
-          <v-tabs-window-item
-            :value="items[0].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-card-component :item="cardWindows[items[0].name]" />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[1].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-common-component
-              :item="commonWindows[items[1].name]"
-            />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[2].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-card-component :item="cardWindows[items[2].name]" />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[3].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-common-component
-              :item="commonWindows[items[3].name]"
-            />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[4].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-common-component
-              :item="commonWindows[items[4].name]"
-            />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[5].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-card-component :item="cardWindows[items[5].name]" />
-          </v-tabs-window-item>
-          <v-tabs-window-item
-            :value="items[6].name"
-            class="tw-h-[34rem] tw-bg-[#F2F4F6] tw-p-12"
-          >
-            <love-and-trust-common-component
-              :item="commonWindows[items[6].name]"
-            />
-          </v-tabs-window-item>
-        </v-tabs-window>
-      </v-card>
+      <lazy-love-and-trust-card-tabs
+        :items="items"
+        :card-windows="cardWindows"
+        :common-windows="commonWindows"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "#imports"
 import loft_Orbital from "@/public/loveAndTrust/Loft_Orbital_logo.jpg"
 import capital from "@/public/loveAndTrust/Capital_One_logo_2.png"
 import terega from "@/public/loveAndTrust/terega_logo.png"
@@ -86,7 +40,6 @@ import majik_systems from "@/public/loveAndTrust/majik_systems_logo.jpg"
 import juniz from "@/public/loveAndTrust/juniz_logo.svg"
 import type { card, common, tab } from "~/styles/loveAndTrust"
 
-const activeItem = ref()
 const items: tab[] = [
   {
     name: "loft_Orbital",
@@ -170,6 +123,7 @@ const commonWindows: Record<string, common> = {
     jobPosition: "Head of IT Infrastructure and IT Security",
   },
 }
+const title: string = "Loved by developers, trusted by enterprises"
 </script>
 
 <style scoped></style>
